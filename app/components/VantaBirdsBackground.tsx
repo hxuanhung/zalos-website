@@ -1,5 +1,6 @@
 "use client";
 import Script from "next/script";
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useRef, useState } from "react";
 
 export default function VantaBirdsBackground({

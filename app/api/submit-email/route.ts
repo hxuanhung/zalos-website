@@ -11,7 +11,7 @@ export async function POST(req: NextRequest) {
     const { Resend } = await import("resend");
     const resend = new Resend(process.env.RESEND_API_KEY);
 
-    const { data, error } = await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: "no-reply@zalos.io",
       to: "info@zalos.io",
       subject: "New Early Access Signup",
@@ -26,9 +26,9 @@ export async function POST(req: NextRequest) {
     }
 
     return NextResponse.json({ success: true });
-  } catch (err: any) {
+  } catch (error) {
     return NextResponse.json(
-      { error: err.message || "Internal server error" },
+      { error: error instanceof Error ? error.message : String(error) },
       { status: 500 }
     );
   }
