@@ -13,11 +13,11 @@ export default function Home() {
     <VantaBirdsBackground>
       <main className="relative z-10 bg-transparent min-h-screen flex flex-col items-center justify-center text-center px-4">
         <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-200 via-green-200 to-yellow-200 bg-clip-text text-transparent mb-6">
-          Customer support for 1000x teams
+          AI for Consulting
         </h1>
         <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-xl">
-          14.ai is a Zendesk alternative built from the ground up for AI agents.
-          The Cursor for customer support.
+          Taking over simple and complex tasks, and building the Full-stack
+          Consulting Service
         </p>
         <form className="flex flex-col sm:flex-row items-center gap-2 w-full max-w-md mx-auto">
           <input
