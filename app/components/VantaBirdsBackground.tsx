@@ -7,15 +7,18 @@ export default function VantaBirdsBackground({
 }: {
   children: React.ReactNode;
 }) {
-  const [scriptsLoaded, setScriptsLoaded] = useState(0);
+  const [threeLoaded, setThreeLoaded] = useState(false);
+  const [vantaLoaded, setVantaLoaded] = useState(false);
   const vantaRef = useRef<HTMLDivElement>(null);
   const vantaEffect = useRef<any>(null);
 
   useEffect(() => {
     if (
-      scriptsLoaded === 2 &&
+      threeLoaded &&
+      vantaLoaded &&
       typeof window !== "undefined" &&
       (window as any).VANTA &&
+      (window as any).THREE &&
       vantaRef.current
     ) {
       vantaEffect.current = (window as any).VANTA.BIRDS({
@@ -32,20 +35,30 @@ export default function VantaBirdsBackground({
     return () => {
       if (vantaEffect.current) vantaEffect.current.destroy();
     };
-  }, [scriptsLoaded]);
+  }, [threeLoaded, vantaLoaded]);
 
   return (
     <>
       <Script
         src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
         strategy="afterInteractive"
-        onLoad={() => setScriptsLoaded((prev) => prev + 1)}
+        onLoad={() => {
+          // Ensure THREE is available globally
+          if (typeof window !== "undefined" && !(window as any).THREE) {
+            (window as any).THREE =
+              (window as any).THREE || (window as any).THREE;
+          }
+          setThreeLoaded(true);
+        }}
       />
-      <Script
-        src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"
-        strategy="afterInteractive"
-        onLoad={() => setScriptsLoaded((prev) => prev + 1)}
-      />
+      {/* Only load Vanta after THREE is loaded */}
+      {threeLoaded && (
+        <Script
+          src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"
+          strategy="afterInteractive"
+          onLoad={() => setVantaLoaded(true)}
+        />
+      )}
       <div
         ref={vantaRef}
         style={{

@@ -34,7 +34,7 @@ export const Hero = () => {
   return (
     <>
       <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] bg-gradient-to-r from-blue-200 via-green-200 to-yellow-200 bg-clip-text text-transparent mb-6">
-        AI for Consulting
+        Automating Consulting Associates
       </h1>
       <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-xl">
         Taking over simple and complex tasks, and building the Full-stack

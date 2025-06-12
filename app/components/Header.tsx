@@ -6,7 +6,7 @@ export const Header = () => (
       alt="Zalos Logo"
       width={180}
       height={48}
-      className="select-none"
+      className="select-none w-[180px] h-auto"
     />
   </header>
 );
