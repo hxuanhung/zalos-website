@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="w-full py-6 flex flex-col items-center justify-center text-gray-400 text-sm bg-transparent z-20">
+    <footer className="w-full px-10 py-6 flex flex-col items-center justify-center text-gray-400 text-sm bg-transparent z-20">
       <div className="flex items-center gap-2 mb-2">
         <span>
           © Zalos AI Limited {new Date().getFullYear()} Zalos. Allrights
