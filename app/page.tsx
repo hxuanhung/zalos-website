@@ -11,18 +11,18 @@ const VantaBirdsBackground = dynamic(
 
 export default function Home() {
   return (
-    <>
-      <header className="w-full flex items-center px-8 py-6">
-        <Image
-          src="/zalos-white-logo.png"
-          alt="Zalos Logo"
-          width={180}
-          height={48}
-          className="select-none"
-        />
-      </header>
-      <VantaBirdsBackground>
-        <main className="relative z-10 bg-transparent min-h-screen flex flex-col items-center justify-center text-center px-4">
+    <VantaBirdsBackground>
+      <div className="min-h-screen flex flex-col">
+        <header className="w-full flex items-center px-8 py-6">
+          <Image
+            src="/zalos-white-logo.png"
+            alt="Zalos Logo"
+            width={180}
+            height={48}
+            className="select-none"
+          />
+        </header>
+        <main className="relative z-10 bg-transparent flex-1 flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-200 via-green-200 to-yellow-200 bg-clip-text text-transparent mb-6">
             AI for Consulting
           </h1>
@@ -44,7 +44,38 @@ export default function Home() {
             </button>
           </form>
         </main>
-      </VantaBirdsBackground>
-    </>
+        <footer className="w-full py-6 flex flex-col items-center justify-center text-gray-400 text-sm bg-transparent z-20">
+          <div className="flex items-center gap-2 mb-2">
+            <span>
+              © {new Date().getFullYear()} Zalos. All rights reserved.
+            </span>
+          </div>
+          <div className="flex gap-4">
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition"
+            >
+              Twitter
+            </a>
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="mailto:contact@zalos.com"
+              className="hover:text-white transition"
+            >
+              Contact
+            </a>
+          </div>
+        </footer>
+      </div>
+    </VantaBirdsBackground>
   );
 }
