@@ -25,7 +25,7 @@ export const Footer = () => {
         >
           Privacy Policy
         </a>
-        <a href="mailto:info@zalos.com" className="hover:text-white transition">
+        <a href="mailto:will@zalos.io" className="hover:text-white transition">
           Contact
         </a>
       </div>
