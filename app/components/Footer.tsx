@@ -9,23 +9,13 @@ export const Footer = () => {
         </span>
       </div>
       <div className="flex gap-4">
-        <a
-          href="https://www.zalos.io"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-white transition"
-        >
-          Terms of Service
+        <a href="/terms-and-conditions" className="hover:text-white transition">
+          Terms and Conditions
         </a>
-        <a
-          href="https://www.zalos.io"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-white transition"
-        >
+        <a href="/privacy-policy" className="hover:text-white transition">
           Privacy Policy
         </a>
-        <a href="mailto:will@zalos.io" className="hover:text-white transition">
+        <a href="mailto:info@zalos.io" className="hover:text-white transition">
           Contact
         </a>
       </div>

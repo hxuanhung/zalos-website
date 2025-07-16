@@ -60,19 +60,20 @@ export default function VantaBirdsBackground({
           onLoad={() => setVantaLoaded(true)}
         />
       )}
-      <div
-        ref={vantaRef}
-        style={{
-          position: "fixed",
-          width: "100vw",
-          height: "100vh",
-          top: 0,
-          left: 0,
-          zIndex: 0,
-        }}
-      >
-        <div className="relative z-10">{children}</div>
-      </div>
+      <>
+        <div
+          ref={vantaRef}
+          style={{
+            position: "fixed",
+            width: "100vw",
+            height: "100vh",
+            top: 0,
+            left: 0,
+            zIndex: 0,
+          }}
+        />
+        <div className="relative z-10 min-h-screen">{children}</div>
+      </>
     </>
   );
 }
