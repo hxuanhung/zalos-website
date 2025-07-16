@@ -35,7 +35,8 @@ export default function TermsAndConditions() {
                 <p className="leading-relaxed mb-4">
                   These Terms of Use constitute a legally binding agreement made
                   between you, whether personally or on behalf of an entity
-                  ("you") and Zalos ("Company", "we", "us", or "our"),
+                  (&quot;you&quot;) and Zalos (&quot;Company&quot;,
+                  &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;),
                   concerning your access to and use of the{" "}
                   <a
                     href="https://zalos.io"
@@ -45,7 +46,7 @@ export default function TermsAndConditions() {
                   </a>{" "}
                   website as well as any other media form, media channel, mobile
                   website or mobile application related, linked, or otherwise
-                  connected thereto (collectively, the "Site"). We are
+                  connected thereto (collectively, the &quot;Site&quot;). We are
                   registered in the United Kingdom and have our registered
                   office at. You agree that by accessing the Site, you have
                   read, understood, and agreed to be bound by all of these Terms
@@ -62,8 +63,8 @@ export default function TermsAndConditions() {
                   posted on the Site from time to time are hereby expressly
                   incorporated herein by reference. We reserve the right, in our
                   sole discretion, to make changes or modifications to these
-                  Terms of Use at any time and for any reason. We will alert you
-                  about any changes by updating the "Last updated" date of these
+                  Terms of Use at any time and for any reason.                   We will alert you
+                  about any changes by updating the &quot;Last updated&quot; date of these
                   Terms of Use, and you waive any right to receive specific
                   notice of each such change. It is your responsibility to
                   periodically review these Terms of Use to stay informed of

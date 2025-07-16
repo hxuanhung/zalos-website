@@ -1,13 +1,13 @@
-"use client";
-import dynamic from "next/dynamic";
-import Footer from "../components/Footer";
-import { Header } from "../components/Header";
+'use client';
+import dynamic from 'next/dynamic';
+import Footer from '../components/Footer';
+import { Header } from '../components/Header';
 
 const VantaBirdsBackground = dynamic(
-  () => import("../components/VantaBirdsBackground"),
+  () => import('../components/VantaBirdsBackground'),
   {
     ssr: false,
-  }
+  },
 );
 
 export default function PrivacyPolicy() {
@@ -24,42 +24,45 @@ export default function PrivacyPolicy() {
             <div className="bg-black/40 backdrop-blur-sm rounded-lg p-8 text-gray-300 space-y-6">
               <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold text-white mb-4">
-                  ZALOS AI LTD'S ONLINE PRIVACY POLICY
+                  ZALOS AI LTD&apos;S ONLINE PRIVACY POLICY
                 </h2>
                 <p className="text-sm text-gray-400">Last updated: 2025</p>
               </div>
 
               <section>
                 <p className="leading-relaxed mb-4">
-                  Welcome to ZALOS AI LTD's privacy policy.
+                  Welcome to ZALOS AI LTD&apos;s privacy policy.
                 </p>
                 <p className="leading-relaxed mb-4">
-                  We are ZALOS AI LTD ("we", "us", "our"). Our company
-                  registration number is 16202720 and our registered address is
-                  47 Randolph Avenue, London, England, W9 1BQ.
+                  We are ZALOS AI LTD (&quot;we&quot;, &quot;us&quot;,
+                  &quot;our&quot;). Our company registration number is 16202720
+                  and our registered address is 47 Randolph Avenue, London,
+                  England, W9 1BQ.
                 </p>
                 <p className="leading-relaxed mb-4">
                   For the purposes of UK and EU laws regarding data protection,
                   we are the data controller, and we are registered with the UK
-                  Information Commissioner's Office (ICO) under registration
-                  number [PLEASE INSERT YOUR ICO REGISTRATION NUMBER].
+                  Information Commissioner&apos;s Office (ICO) under
+                  registration number [PLEASE INSERT YOUR ICO REGISTRATION
+                  NUMBER].
                 </p>
                 <p className="leading-relaxed mb-4">
                   This privacy policy applies to: (i) individuals who visit and
-                  use our website at{" "}
+                  use our website at{' '}
                   <a
                     href="https://www.zalos.io/"
                     className="text-blue-400 hover:text-blue-300 transition"
                   >
                     https://www.zalos.io/
-                  </a>{" "}
-                  (the "Website") and platform (the "Platform"), engage with us
-                  via our Website, Platform, social media accounts, and in
-                  connection with any purchases, contracts or related matters;
-                  (ii) individuals we deal with in their business capacity, such
-                  as representatives of our customers or suppliers or investors;
-                  and (iii) individuals that apply for work with us ("you",
-                  "your").
+                  </a>{' '}
+                  (the &quot;Website&quot;) and platform (the
+                  &quot;Platform&quot;), engage with us via our Website,
+                  Platform, social media accounts, and in connection with any
+                  purchases, contracts or related matters; (ii) individuals we
+                  deal with in their business capacity, such as representatives
+                  of our customers or suppliers or investors; and (iii)
+                  individuals that apply for work with us (&quot;you&quot;,
+                  &quot;your&quot;).
                 </p>
                 <p className="leading-relaxed">
                   It is important that you read this privacy policy together
@@ -88,7 +91,7 @@ export default function PrivacyPolicy() {
                 </p>
                 <p className="leading-relaxed">
                   If you have any questions about how we use your personal data,
-                  please contact:{" "}
+                  please contact:{' '}
                   <a
                     href="mailto:info@zalos.io"
                     className="text-blue-400 hover:text-blue-300 transition"
@@ -351,7 +354,7 @@ export default function PrivacyPolicy() {
                 <p className="leading-relaxed">
                   <strong>Opting out.</strong> You can ask us to stop sending
                   you marketing messages at any time by contacting us at any
-                  time at{" "}
+                  time at{' '}
                   <a
                     href="mailto:info@zalos.io"
                     className="text-blue-400 hover:text-blue-300 transition"
@@ -373,9 +376,9 @@ export default function PrivacyPolicy() {
                   improve our Website. A cookie is a small file of letters and
                   numbers that we store on your browser or the hard drive of
                   your computer. Cookies contain information that is transferred
-                  to your computer's hard drive. You can find details of the
-                  cookies we use on our Website via the cookies notifications on
-                  our Website.
+                  to your computer&apos;s hard drive. You can find details of
+                  the cookies we use on our Website via the cookies
+                  notifications on our Website.
                 </p>
               </section>
 
@@ -395,9 +398,9 @@ export default function PrivacyPolicy() {
                   8. Where we store your personal data
                 </h2>
                 <p className="leading-relaxed mb-4">
-                  Your information is stored in the United Kingdom ("UK") or
-                  European Economic Area ("EEA"), but we may transfer it to
-                  countries outside the UK and EEA.
+                  Your information is stored in the United Kingdom
+                  (&quot;UK&quot;) or European Economic Area (&quot;EEA&quot;),
+                  but we may transfer it to countries outside the UK and EEA.
                 </p>
                 <p className="leading-relaxed">
                   Whenever we transfer your information internationally, we will
@@ -405,10 +408,11 @@ export default function PrivacyPolicy() {
                   adequate safeguards are in place to protect your personal
                   information and to make sure it is treated securely and in
                   accordance with this privacy policy. In these cases, we rely
-                  on approved data transfer mechanisms (such as the EU "Standard
-                  Contractual Clauses" or UK "International Data Transfer
-                  Agreement" or "UK Addendum") to ensure your information is
-                  subject to adequate safeguards in the recipient country.
+                  on approved data transfer mechanisms (such as the EU
+                  &quot;Standard Contractual Clauses&quot; or UK
+                  &quot;International Data Transfer Agreement&quot; or &quot;UK
+                  Addendum&quot;) to ensure your information is subject to
+                  adequate safeguards in the recipient country.
                 </p>
               </section>
 
@@ -463,13 +467,13 @@ export default function PrivacyPolicy() {
                   speed up our response.
                 </p>
                 <p className="leading-relaxed mb-4">
-                  Please send us an email at{" "}
+                  Please send us an email at{' '}
                   <a
                     href="mailto:info@zalos.io"
                     className="text-blue-400 hover:text-blue-300 transition"
                   >
                     info@zalos.io
-                  </a>{" "}
+                  </a>{' '}
                   if you would like to exercise any of your rights.
                 </p>
                 <p className="leading-relaxed mb-4">
@@ -482,7 +486,7 @@ export default function PrivacyPolicy() {
                 <p className="leading-relaxed mb-2">
                   For individuals in the EEA – the contact information for the
                   data protection regulator in your place of residence can be
-                  found here:{" "}
+                  found here:{' '}
                   <a
                     href="https://edpb.europa.eu/about-edpb/board/members_en"
                     className="text-blue-400 hover:text-blue-300 transition"
@@ -492,7 +496,7 @@ export default function PrivacyPolicy() {
                 </p>
                 <p className="leading-relaxed">
                   For individuals in the UK – the contact information for the
-                  UK's data protection regulator can be found here:{" "}
+                  UK&apos;s data protection regulator can be found here:{' '}
                   <a
                     href="https://ico.org.uk/make-a-complaint/"
                     className="text-blue-400 hover:text-blue-300 transition"
@@ -574,13 +578,13 @@ export default function PrivacyPolicy() {
                 <p className="leading-relaxed mb-4">
                   In the event that you wish to make a complaint about how we
                   process your personal data, please contact us in the first
-                  instance at{" "}
+                  instance at{' '}
                   <a
                     href="mailto:info@zalos.io"
                     className="text-blue-400 hover:text-blue-300 transition"
                   >
                     info@zalos.io
-                  </a>{" "}
+                  </a>{' '}
                   and we will endeavour to deal with your request as soon as
                   possible.
                 </p>
@@ -590,9 +594,9 @@ export default function PrivacyPolicy() {
                 </p>
                 <div className="bg-black/30 rounded-lg p-4 mb-4">
                   <p className="font-medium text-white mb-2">
-                    The ICO's address:
+                    The ICO&apos;s address:
                   </p>
-                  <p>Information Commissioner's Office</p>
+                  <p>Information Commissioner&apos;s Office</p>
                   <p>Wycliffe House</p>
                   <p>Water Lane</p>
                   <p>Wilmslow</p>
@@ -600,7 +604,7 @@ export default function PrivacyPolicy() {
                   <p>SK9 5AF</p>
                   <p>Helpline number: 0303 123 1113</p>
                   <p>
-                    ICO website:{" "}
+                    ICO website:{' '}
                     <a
                       href="https://www.ico.org.uk"
                       className="text-blue-400 hover:text-blue-300 transition"
@@ -625,12 +629,12 @@ export default function PrivacyPolicy() {
                   policy, through a notice provided via the Website and Platform
                   or otherwise supplied to you. However, you should look at this
                   policy regularly to check for any changes. We will also update
-                  the "Last Updated" date at the top of this policy, which
-                  reflects the effective date of such policy. Your continued
-                  engagement with us after the date of the updated policy
-                  constitutes your acceptance of the updated policy. If you do
-                  not agree to the updated policy, you must stop your engagement
-                  with us.
+                  the &quot;Last Updated&quot; date at the top of this policy,
+                  which reflects the effective date of such policy. Your
+                  continued engagement with us after the date of the updated
+                  policy constitutes your acceptance of the updated policy. If
+                  you do not agree to the updated policy, you must stop your
+                  engagement with us.
                 </p>
               </section>
             </div>
