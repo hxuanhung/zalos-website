@@ -43,8 +43,7 @@ export default function PrivacyPolicy() {
                   For the purposes of UK and EU laws regarding data protection,
                   we are the data controller, and we are registered with the UK
                   Information Commissioner&apos;s Office (ICO) under
-                  registration number [PLEASE INSERT YOUR ICO REGISTRATION
-                  NUMBER].
+                  registration number ZB938668.
                 </p>
                 <p className="leading-relaxed mb-4">
                   This privacy policy applies to: (i) individuals who visit and
